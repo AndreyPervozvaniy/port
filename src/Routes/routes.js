@@ -9,8 +9,8 @@ export const PATHS = {
   SKILLS: "/skills",
 };
 export const routes = [
-  { path: PATHS.CONTACT, element: Contact },
-  { path: PATHS.MAIN, element: Main },
-  { path: PATHS.PRODUCT, element: Product },
-  { path: PATHS.SKILLS, element: Skills },
+  { path: PATHS.CONTACT, element: Contact   },
+  { path: PATHS.MAIN, element: Main  },
+  { path: PATHS.PRODUCT, element: Product    },
+  { path: PATHS.SKILLS, element: Skills   },
 ];
