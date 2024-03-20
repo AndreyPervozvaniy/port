@@ -1,15 +1,11 @@
 import React from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import { Typewriter } from "react-simple-typewriter";
-const TypewriterComponent = () => {
+const TypewriterComponent = ({ text }) => {
   return (
     <Flex>
       <Text fontWeight={"bold"}>
-        <Typewriter
-          words={["Code", "or", "Die=)"]}
-          loop="true"
-          delaySpeed={"500"}
-        />
+        <Typewriter words={text} loop="true" delaySpeed={"500"} />
       </Text>
     </Flex>
   );

@@ -1,5 +1,3 @@
-import { Flex } from "@chakra-ui/react";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { routes } from "./Routes/routes";
 function App() {
