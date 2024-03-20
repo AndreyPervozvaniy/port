@@ -2,7 +2,8 @@ import * as yup from "yup";
 import Product1 from "../assets/product1.png";
 import Product2 from "../assets/product2.png";
 import Product3 from "../assets/product3.png";
-import { Flex, Kbd } from "@chakra-ui/react";
+
+import { Flex, Icon, Kbd } from "@chakra-ui/react";
 export const navLinks = [
   {
     name: "Products",
@@ -81,4 +82,14 @@ export const ToastObjErr = {
   status: "error",
   duration: 9000,
   isClosable: true,
+};
+export const ProductDescription = {
+  title1: "My product",
+  title2: "Your feedback",
+  description: `Greetings, my name is Andrey and I am a beginner frontend developer. I
+  would like to share with you several projects that I have been working
+  on. Please find below the links to each project as well as their
+  respective Git repositories. Thank you for taking the time to review
+  my work. I would be grateful for any feedback, suggestions, or tips
+  that you may have!`,
 };

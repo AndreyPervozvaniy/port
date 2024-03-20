@@ -1,10 +1,11 @@
-import { Text, Flex, Image, Button, Link, Icon } from "@chakra-ui/react";
+import { Text, Flex, Image, Link } from "@chakra-ui/react";
 import React from "react";
 import Header from "../../Components/HeaderComponent/Header";
-import { ProductData } from "../../Utills/utills";
+import { ProductData, ProductDescription } from "../../Utills/utills";
 import { SiNetlify } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import FeedBackForm from "../../Components/FeedbackForm/FeedBackForm";
+import LinkBtns from "../../Components/LinkBtns/LinkBtns";
 
 const Product = () => {
   return (
@@ -12,16 +13,11 @@ const Product = () => {
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"}>
-          Greetings, my name is Andrey and I am a beginner frontend developer. I
-          would like to share with you several projects that I have been working
-          on. Please find below the links to each project as well as their
-          respective Git repositories. Thank you for taking the time to review
-          my work. I would be grateful for any feedback, suggestions, or tips
-          that you may have!
+          {ProductDescription.description}
         </Text>
       </Flex>{" "}
       <Text mt={"20px"} fontWeight={"bold"}>
-        My product:
+        {ProductDescription.title1}
       </Text>
       <Flex justify={"space-around"} mt={"20px"}>
         {ProductData.map((item, index) => (
@@ -40,23 +36,16 @@ const Product = () => {
             <Text mt={5} fontWeight={"bold"}>
               {item.name}
             </Text>
+
             <Flex justifyContent={"space-around"} mt={5}>
-              <Link href={item.netlifyLink} isExternal>
-                <Button>
-                  <Icon as={SiNetlify} w={10} h={5} />
-                </Button>
-              </Link>
-              <Link href={item.gitLink} isExternal>
-                <Button>
-                  <Icon as={FaGithub} w={10} h={5} />
-                </Button>
-              </Link>
+              <LinkBtns href={item.netlifyLink} icon={SiNetlify} />
+              <LinkBtns href={item.gitLink} icon={FaGithub} />
             </Flex>
           </Flex>
         ))}
       </Flex>
       <Text mt={"20px"} fontWeight={"bold"}>
-        Your feedback:
+        {ProductDescription.title2}
       </Text>
       <FeedBackForm />
     </Flex>
