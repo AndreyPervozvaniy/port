@@ -1,21 +1,19 @@
-import { Button, Flex, Input, Text, Spinner } from "@chakra-ui/react";
+import { Button, Flex, Input, Text, Spinner, useToast } from "@chakra-ui/react";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { FormSchema } from "../../Utills/utills";
+import { FormSchema, ToastObjErr, ToastObjSuc } from "../../Utills/utills";
 import axios from "axios";
 
 import { useMutation } from "react-query";
 
 const FeedBackForm = () => {
+  const toast = useToast();
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
-    watch,
-    setValue,
-    control,
   } = useForm({
     mode: "onChange",
     resolver: yupResolver(FormSchema),
@@ -26,11 +24,11 @@ const FeedBackForm = () => {
       axios.post("https://65faa1be3909a9a65b1af692.mockapi.io/Feedback", data),
     {
       onSuccess: () => {
-        console.log("Форма успешно отправлена!");
+        toast(ToastObjSuc);
         reset();
       },
       onError: (error) => {
-        console.error("Ошибка при отправке формы:", error);
+        toast(ToastObjErr);
       },
     }
   );
@@ -40,7 +38,7 @@ const FeedBackForm = () => {
   };
 
   return (
-    <Flex mt={10} justify={"center"}>
+    <Flex mt={5} justify={"center"}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Flex flexDir={"column"}>
           <Input

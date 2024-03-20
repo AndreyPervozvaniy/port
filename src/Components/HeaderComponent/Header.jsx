@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const Header = () => {
   const router = useNavigate();
   const handleKeyDown = (event) => {
-    const key = event.key.toLowerCase();
+    const key = event.key;
     if (event.ctrlKey && ["1", "2", "3"].includes(key)) {
       event.preventDefault();
       const routes = {
@@ -42,7 +42,7 @@ const Header = () => {
           onClick={() => router("/")}
           cursor={"pointer"}
         />
-        <TypewriterComponent text={["Code", "or", "die"]} />
+        <TypewriterComponent text={["Code", "or", "Die..."]} />
       </Flex>
       <Flex justifyContent={"space-around"} w={"30%"}>
         {navLinks.map((item, index) => (

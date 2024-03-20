@@ -66,3 +66,19 @@ export const FormSchema = yup
       .required("Обязательное поле"),
   })
   .required();
+
+export const ToastObjSuc = {
+  title: "Thank you!",
+  description: "You have been very helpful to me!",
+  status: "success",
+  duration: 9000,
+  isClosable: true,
+};
+export const ToastObjErr = {
+  title: "Ooops...",
+  description:
+    "An error has occurred. I am currently working to resolve the issue.",
+  status: "error",
+  duration: 9000,
+  isClosable: true,
+};

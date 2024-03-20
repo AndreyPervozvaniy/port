@@ -8,7 +8,7 @@ import FeedBackForm from "../../Components/FeedbackForm/FeedBackForm";
 
 const Product = () => {
   return (
-    <Flex flexDir={"column"} justifyContent={"center"}>
+    <Flex flexDir={"column"} justifyContent={"center"} textAlign={"center"}>
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"}>
@@ -17,9 +17,12 @@ const Product = () => {
           on. Please find below the links to each project as well as their
           respective Git repositories. Thank you for taking the time to review
           my work. I would be grateful for any feedback, suggestions, or tips
-          that you may have.
+          that you may have!
         </Text>
-      </Flex>
+      </Flex>{" "}
+      <Text mt={"20px"} fontWeight={"bold"}>
+        My product:
+      </Text>
       <Flex justify={"space-around"} mt={"20px"}>
         {ProductData.map((item, index) => (
           <Flex
@@ -52,6 +55,9 @@ const Product = () => {
           </Flex>
         ))}
       </Flex>
+      <Text mt={"20px"} fontWeight={"bold"}>
+        Your feedback:
+      </Text>
       <FeedBackForm />
     </Flex>
   );
