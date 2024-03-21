@@ -57,11 +57,16 @@ const FeedBackForm = () => {
             {...register("feedback")}
           />
           <Text color={"red"}>{errors.feedback?.message}</Text>
-          <Button type="submit" mt={5} disabled={isLoading}>
+          <Button
+            type="submit"
+            mt={5}
+            backgroundColor={"#1f2328"}
+            disabled={isLoading}
+          >
             {isLoading ? (
               <Spinner color="green" size="md" />
             ) : (
-              <Text>Sent</Text>
+              <Text color={"white"}>Sent</Text>
             )}
           </Button>
         </Flex>
