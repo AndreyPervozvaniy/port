@@ -18,14 +18,15 @@ const Contact = () => {
         <Flex justify={"center"} flexWrap="wrap" gridGap={6}>
           {SocialLink.map((item, index) => (
             <Flex
+              w={"sm"}
               flexDir={"column"}
               alignItems={"center"}
+              justifyContent={"center"}
               border={`2px solid ${item.color}`}
               borderRadius={"10px"}
               textAlign={"center"}
               p={5}
               key={index}
-              flex={1}
             >
               <Text fontWeight={"bold"}>{item.title}</Text>
               <Icon as={item.icon} w={10} h={10} mt={5} />

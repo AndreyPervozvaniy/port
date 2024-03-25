@@ -5,7 +5,18 @@ import Product3 from "../assets/product3.png";
 import { GiDjinn } from "react-icons/gi";
 import { Flex, Kbd } from "@chakra-ui/react";
 import { MdWork } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaReact, FaTelegram } from "react-icons/fa";
+import { RiBearSmileFill } from "react-icons/ri";
+import {
+  SiChakraui,
+  SiRedux,
+  SiReacthookform,
+  SiAxios,
+  SiReactquery,
+  SiReactrouter,
+  SiJavascript,
+  SiTypescript,
+} from "react-icons/si";
 export const navLinks = [
   {
     name: "Products",
@@ -138,5 +149,95 @@ export const SocialLink = [
     icon: MdWork,
     color: "red",
     text: "This is my current CV on Work.ua. I am primarily interested in the main offer and actively searching for suitable vacancies.",
+  },
+];
+export const SkillObj = [
+  {
+    icon: FaReact,
+    value: 80,
+    title: "React",
+    color: "cyan",
+    badge: "Resting =)",
+    variant: "solid",
+  },
+  {
+    icon: SiRedux,
+    value: 60,
+    title: "React Redux",
+    color: "red",
+    badge: "Resting =)",
+    variant: "solid",
+  },
+  {
+    icon: SiChakraui,
+    value: 80,
+    title: "Chakra UI",
+    color: "blue",
+    badge: "Resting =)",
+    variant: "solid",
+  },
+  {
+    icon: RiBearSmileFill,
+    value: 70,
+    title: "Zustand",
+    color: "blackAlpha",
+    badge: "Resting =)",
+    variant: "solid",
+  },
+  {
+    icon: SiReacthookform,
+    value: 60,
+    title: " Hook Form",
+    color: "pink",
+    badge: "Studying...",
+    variant: "outline",
+  },
+  {
+    icon: FaGithub,
+    value: 70,
+    title: "Git",
+    color: "gray",
+    badge: "Resting =)",
+    variant: "solid",
+  },
+  {
+    icon: SiAxios,
+    value: 60,
+    title: "Axios",
+    color: "blue",
+    badge: "Resting =)",
+    variant: "solid",
+  },
+  {
+    icon: SiReactquery,
+    value: 60,
+    title: " React Query",
+    color: "purple",
+    badge: "Studying...",
+    variant: "outline",
+  },
+  {
+    icon: SiReactrouter,
+    value: 70,
+    title: "React Router",
+    color: "blue",
+    badge: "Resting =)",
+    variant: "solid",
+  },
+  {
+    icon: SiJavascript,
+    value: 80,
+    title: "JS",
+    color: "yellow",
+    badge: "Studying...",
+    variant: "outline",
+  },
+  {
+    icon: SiTypescript,
+    value: 30,
+    title: "TS",
+    color: "blue",
+    badge: "Studying...",
+    variant: "outline",
   },
 ];
