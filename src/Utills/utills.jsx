@@ -110,7 +110,7 @@ export const ContactDescription = {
   desc: "On this page, you can find my contact information, including my social media profiles and all the necessary links to get in touch with me.",
 };
 export const SkillDescription = {
-  desc: "On this page you will be able to see my personal subjective evaluation of my knowledge and abilities, because I haven't had a chance to qualitatively evaluate them yet =) And also, on this page, you can see what technologies and libraries I have studied or am studying at the moment! ",
+  desc: "This page contains my personal assessment of my knowledge and abilities. As I have not yet had the opportunity to undergo a qualitative assessment at the Trainee or Junior developer level, this assessment is subjective. Additionally, this page lists the technologies and libraries that I have studied or am currently studying. ",
 };
 
 export const SocialLink = [
