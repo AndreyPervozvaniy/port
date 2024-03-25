@@ -31,7 +31,12 @@ const Product = () => {
             p={2}
           >
             <Link href={item.netlifyLink} isExternal>
-              <Image src={item.image} w={"350px"} cursor={"pointer"} />
+              <Image
+                src={item.image}
+                w={"350px"}
+                cursor={"pointer"}
+                loading="eager"
+              />
             </Link>
             <Text mt={5} fontWeight={"bold"}>
               {item.name}
