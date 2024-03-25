@@ -12,7 +12,7 @@ const Product = () => {
     <Flex flexDir={"column"} justifyContent={"center"} textAlign={"center"}>
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
-        <Text w={"60%"} textAlign={"center"}>
+        <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>
           {ProductDescription.description}
         </Text>
       </Flex>{" "}

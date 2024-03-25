@@ -46,14 +46,21 @@ const FeedBackForm = () => {
             mt={3}
             placeholder="Your name..."
             {...register("name")}
+            border={"1px solid black"}
           />
           <Text color={"red"}>{errors.name?.message}</Text>
-          <Input mt={3} placeholder="Your email..." {...register("email")} />
+          <Input
+            mt={3}
+            border={"1px solid black"}
+            placeholder="Your email..."
+            {...register("email")}
+          />
           <Text color={"red"}>{errors.email?.message}</Text>
           <Input
             h={"100px"}
             placeholder={"Your feedback..."}
             mt={3}
+            border={"1px solid black"}
             {...register("feedback")}
           />
           <Text color={"red"}>{errors.feedback?.message}</Text>

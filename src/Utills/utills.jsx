@@ -3,9 +3,9 @@ import Product1 from "../assets/product1.png";
 import Product2 from "../assets/product2.png";
 import Product3 from "../assets/product3.png";
 import { GiDjinn } from "react-icons/gi";
-import { Flex, Icon, Kbd } from "@chakra-ui/react";
+import { Flex, Kbd } from "@chakra-ui/react";
 import { MdWork } from "react-icons/md";
-import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 export const navLinks = [
   {
     name: "Products",
@@ -98,6 +98,9 @@ export const ProductDescription = {
 export const ContactDescription = {
   desc: "On this page, you can find my contact information, including my social media profiles and all the necessary links to get in touch with me.",
 };
+export const SkillDescription = {
+  desc: "On this page you will be able to see my personal subjective evaluation of my knowledge and abilities, because I haven't had a chance to qualitatively evaluate them yet =) And also, on this page, you can see what technologies and libraries I have studied or am studying at the moment! ",
+};
 
 export const SocialLink = [
   {
@@ -105,7 +108,7 @@ export const SocialLink = [
     link: "https://t.me/AndreyPervozvaniy",
     icon: FaTelegram,
     color: "red",
-    text: "Can text me 9-21",
+    text: "I'm on 24/7 =)",
   },
 
   {
@@ -113,27 +116,27 @@ export const SocialLink = [
     link: "https://t.me/AndreyPervozvaniy",
     icon: GiDjinn,
     color: "blue",
-    text: "Can text me 9-21",
+    text: "My current CV is available on Djinni!",
   },
   {
     title: "Git",
     link: "https://github.com/AndreyPervozvaniy",
     icon: FaGithub,
     color: "grey",
-    text: "Can text me 9-21",
+    text: "My Git repository of projects.",
   },
   {
     title: "Linkedin",
     link: " https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA%D1%83%D0%B4%D1%80%D1%8F-24343b168/",
     icon: FaLinkedin,
     color: "orange",
-    text: "Can text me 9-21",
+    text: "My LinkedIn page is not checked frequently, but I will review your message when I can.",
   },
   {
     title: "Work",
     link: "https://t.me/AndreyPervozvaniy",
     icon: MdWork,
     color: "red",
-    text: "Can text me 9-21",
+    text: "This is my current CV on Work.ua. I am primarily interested in the main offer and actively searching for suitable vacancies.",
   },
 ];
