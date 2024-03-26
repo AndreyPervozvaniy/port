@@ -5,10 +5,14 @@ import { ContactDescription, SocialLink } from "../../Utills/utills";
 import LinkBtns from "../../Components/LinkBtns/LinkBtns";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Footer from "../../Components/FooterComponent/Footer";
+import Elevator from "../../Components/ElevatorComp/Elevator";
+import FloatingBtnContant from "../../Components/FloatingBtnContact/FloatingBtn";
 
 const Contact = () => {
   return (
     <Flex flexDir={"column"} fontFamily={"Montserrat"}>
+      <Elevator />
+      <FloatingBtnContant />
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>

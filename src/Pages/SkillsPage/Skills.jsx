@@ -3,6 +3,8 @@ import React from "react";
 import Header from "../../Components/HeaderComponent/Header";
 import { SkillDescription, SkillObj } from "../../Utills/utills";
 import Footer from "../../Components/FooterComponent/Footer";
+import Elevator from "../../Components/ElevatorComp/Elevator";
+import FloatingBtnContant from "../../Components/FloatingBtnContact/FloatingBtn";
 
 const Skills = () => {
   return (
@@ -12,6 +14,8 @@ const Skills = () => {
       textAlign={"center"}
       fontFamily={"Montserrat"}
     >
+      <Elevator />
+      <FloatingBtnContant />
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>

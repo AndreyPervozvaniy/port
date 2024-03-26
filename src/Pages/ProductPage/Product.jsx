@@ -7,6 +7,8 @@ import { FaGithub } from "react-icons/fa";
 import FeedBackForm from "../../Components/FeedbackForm/FeedBackForm";
 import LinkBtns from "../../Components/LinkBtns/LinkBtns";
 import Footer from "../../Components/FooterComponent/Footer";
+import Elevator from "../../Components/ElevatorComp/Elevator";
+import FloatingBtnContant from "../../Components/FloatingBtnContact/FloatingBtn";
 
 const Product = () => {
   return (
@@ -16,6 +18,8 @@ const Product = () => {
       textAlign={"center"}
       fontFamily={"Montserrat"}
     >
+      <Elevator />
+      <FloatingBtnContant />
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>
