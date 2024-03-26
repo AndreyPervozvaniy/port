@@ -4,10 +4,11 @@ import Header from "../../Components/HeaderComponent/Header";
 import { ContactDescription, SocialLink } from "../../Utills/utills";
 import LinkBtns from "../../Components/LinkBtns/LinkBtns";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Footer from "../../Components/FooterComponent/Footer";
 
 const Contact = () => {
   return (
-    <Flex flexDir={"column"}>
+    <Flex flexDir={"column"} fontFamily={"Montserrat"}>
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>
@@ -38,6 +39,7 @@ const Contact = () => {
           ))}{" "}
         </Flex>
       </Container>
+      <Footer />
     </Flex>
   );
 };

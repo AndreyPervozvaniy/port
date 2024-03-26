@@ -2,10 +2,16 @@ import { Flex, Icon, Text, Progress, Badge } from "@chakra-ui/react";
 import React from "react";
 import Header from "../../Components/HeaderComponent/Header";
 import { SkillDescription, SkillObj } from "../../Utills/utills";
+import Footer from "../../Components/FooterComponent/Footer";
 
 const Skills = () => {
   return (
-    <Flex flexDir={"column"} justifyContent={"center"} textAlign={"center"}>
+    <Flex
+      flexDir={"column"}
+      justifyContent={"center"}
+      textAlign={"center"}
+      fontFamily={"Montserrat"}
+    >
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>
@@ -47,6 +53,7 @@ const Skills = () => {
           ))}
         </Flex>
       </Flex>
+      <Footer />
     </Flex>
   );
 };

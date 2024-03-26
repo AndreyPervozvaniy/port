@@ -5,7 +5,13 @@ import Product3 from "../assets/product3.png";
 import { GiDjinn } from "react-icons/gi";
 import { Flex, Kbd } from "@chakra-ui/react";
 import { MdWork } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaReact, FaTelegram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaReact,
+  FaTelegram,
+  FaInstagram,
+} from "react-icons/fa";
 import { RiBearSmileFill } from "react-icons/ri";
 import {
   SiChakraui,
@@ -239,5 +245,39 @@ export const SkillObj = [
     color: "blue",
     badge: "Studying...",
     variant: "outline",
+  },
+];
+export const MainPageDesc = {
+  name: "ANDREY BELOKUDRYA",
+  title: " Front-end Developer",
+  desc: "For the past 9 months, I have been actively learning programming and contributing to various projects. I strive to bring a unique  perspective to each project.",
+};
+export const KeyWordObj = {
+  text: " View Projects",
+  route: "/product",
+  text2: "  Contact me",
+  route2: "/contact",
+};
+export const FloatBtnData = [
+  {
+    initial: 40,
+    exit: 10,
+    top: -50,
+    href: "https://t.me/AndreyPervozvaniy",
+    icon: FaTelegram,
+  },
+  {
+    initial: 80,
+    exit: 40,
+    top: -100,
+    href: "https://www.instagram.com/andreypervozvaniy?igsh=YndvcDNzOHhtd2E4&utm_source=qr",
+    icon: FaInstagram,
+  },
+  {
+    initial: 120,
+    exit: 80,
+    top: -150,
+    href: "https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA%D1%83%D0%B4%D1%80%D1%8F-24343b168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    icon: FaLinkedin,
   },
 ];

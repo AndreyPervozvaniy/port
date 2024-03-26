@@ -6,10 +6,16 @@ import { SiNetlify } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import FeedBackForm from "../../Components/FeedbackForm/FeedBackForm";
 import LinkBtns from "../../Components/LinkBtns/LinkBtns";
+import Footer from "../../Components/FooterComponent/Footer";
 
 const Product = () => {
   return (
-    <Flex flexDir={"column"} justifyContent={"center"} textAlign={"center"}>
+    <Flex
+      flexDir={"column"}
+      justifyContent={"center"}
+      textAlign={"center"}
+      fontFamily={"Montserrat"}
+    >
       <Header />
       <Flex justifyContent={"center"} mt={"20px"}>
         <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>
@@ -53,6 +59,7 @@ const Product = () => {
         {ProductDescription.title2}
       </Text>
       <FeedBackForm />
+      <Footer />
     </Flex>
   );
 };

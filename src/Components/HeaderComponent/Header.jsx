@@ -32,7 +32,6 @@ const Header = () => {
       p={2}
       justifyContent={"space-between"}
       alignItems={"center"}
-      borderBottom={"1px solid #ccc"}
     >
       <Flex>
         {" "}
@@ -41,6 +40,7 @@ const Header = () => {
           w={"250px"}
           onClick={() => router("/")}
           cursor={"pointer"}
+          _hover={{ opacity: "60%" }}
         />
         <TypewriterComponent text={["Code", "or", "Die..."]} />
       </Flex>
