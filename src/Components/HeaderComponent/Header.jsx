@@ -4,9 +4,26 @@ import Logo from "../../assets/Logo.png";
 import TypewriterComponent from "../TypewriterComponent/TypewriterComponent";
 import { navLinks } from "../../Utills/utills";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Header = () => {
   const router = useNavigate();
+  const [showShadow, setShowShadow] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollThreshold = 50;
+      if (window.scrollY > scrollThreshold) {
+        setShowShadow(true);
+      } else {
+        setShowShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const handleKeyDown = (event) => {
     const key = event.key;
     if (event.ctrlKey && ["1", "2", "3"].includes(key)) {
@@ -28,10 +45,16 @@ const Header = () => {
   }, []);
   return (
     <Flex
-      w={"full"}
       p={2}
       justifyContent={"space-between"}
+      pos="fixed"
+      w="100%"
+      zIndex="11"
+      top="0"
+      background="white"
+      left="0"
       alignItems={"center"}
+      boxShadow={showShadow ? "0 2px 4px rgba(0, 0, 0, 0.2)" : "none"}
     >
       <Flex>
         {" "}

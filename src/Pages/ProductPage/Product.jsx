@@ -19,7 +19,7 @@ const Product = () => {
       <Elevator />
       <FloatingBtnContant />
       <Header />
-      <Flex justifyContent={"center"} mt={"20px"}>
+      <Flex justifyContent={"center"} mt={"100px"}>
         <Text w={"60%"} textAlign={"center"} fontWeight={"bold"}>
           {ProductDescription.description}
         </Text>

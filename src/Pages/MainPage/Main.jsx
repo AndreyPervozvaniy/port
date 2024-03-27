@@ -18,7 +18,7 @@ const Main = () => {
       <Header />
       <Elevator />
       <FloatingBtnContant />
-      <Flex flexDir={"row"}>
+      <Flex flexDir={"row"} mt={"100px"}>
         <Flex flexDir={"column"} p={10} mt={20} maxW={"4xl"}>
           <TitleText
             text={MainPageDesc.name}
