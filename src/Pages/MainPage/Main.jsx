@@ -1,13 +1,15 @@
 import { Flex, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import Header from "../../Components/HeaderComponent/Header";
-import face from "../../assets/asd.png";
+import face from "../../assets/Face3.jpg";
 import ScrollIcon from "../../Components/Scroll Icon/ScrollIcon";
 import { KeyWordObj, MainPageDesc } from "../../Utills/utills";
 import KeyWord from "../../Components/KeyWord/KeyWord";
 import TitleText from "../../Components/TitleText/TitleText";
 import Elevator from "../../Components/ElevatorComp/Elevator";
 import FloatingBtnContant from "../../Components/FloatingBtnContact/FloatingBtn";
+import { ProductCollection } from "../../Components/ProductCollection/ProductCollection";
+import Footer from "../../Components/FooterComponent/Footer";
 
 const Main = () => {
   return (
@@ -28,11 +30,21 @@ const Main = () => {
             <KeyWord text={KeyWordObj.text2} route={KeyWordObj.route2} />
           </Flex>
         </Flex>
-        <Image mt={"10px"} w={"550px"} src={face} />
+        <Flex mr={10}>
+          <Image w={"450px"} src={face} />
+        </Flex>
       </Flex>
       <Flex justify={"center"}>
         <ScrollIcon />
-      </Flex>{" "}
+      </Flex>
+      <Flex flexDir={"column"} p={10} mt={20} maxW={"4xl"}>
+        <TitleText
+          text={MainPageDesc.projectName}
+          title={MainPageDesc.projectTitle}
+        />
+      </Flex>
+      <ProductCollection />
+      <Footer />
     </Flex>
   );
 };

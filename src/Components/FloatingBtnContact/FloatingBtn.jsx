@@ -19,12 +19,12 @@ const FloatingBtnContant = () => {
       zIndex="999"
     >
       <IconButton
-        icon={<Icon as={isOpen ? IoClose : FaPhone} />}
+        icon={<Icon as={isOpen ? IoClose : FaPhone} color={"white"} />}
         borderRadius="full"
         w={50}
         h={50}
         onClick={toggleIcons}
-        backgroundColor="#decb6a"
+        backgroundColor="black"
         transition={{ duration: 0.2 }}
       />
       <Flex>
@@ -41,9 +41,9 @@ const FloatingBtnContant = () => {
               >
                 <Link href={item.href} isExternal>
                   <IconButton
-                    icon={<Icon as={item.icon} />}
+                    icon={<Icon as={item.icon} color={"black"} />}
                     borderRadius="full"
-                    backgroundColor={"#decb6a"}
+                    backgroundColor={"#ccc"}
                   />
                 </Link>
               </motion.div>

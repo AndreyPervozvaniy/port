@@ -2,6 +2,9 @@ import * as yup from "yup";
 import Product1 from "../assets/product1.png";
 import Product2 from "../assets/product2.png";
 import Product3 from "../assets/product3.png";
+import item1 from "../assets/item1.png";
+import item2 from "../assets/item2.png";
+import item3 from "../assets/item3.png";
 import { GiDjinn } from "react-icons/gi";
 import { Flex, Kbd } from "@chakra-ui/react";
 import { MdWork } from "react-icons/md";
@@ -59,18 +62,24 @@ export const ProductData = [
     image: Product2,
     netlifyLink: "https://yamasakiacademydnipro.netlify.app/",
     gitLink: "https://github.com/AndreyPervozvaniy/my-app",
+    img: item3,
+    year: 2023,
   },
   {
     name: "Burger Lord",
     image: Product1,
     netlifyLink: "https://burgerlord.netlify.app/",
     gitLink: "https://github.com/AndreyPervozvaniy/ReactFastFood",
+    img: item2,
+    year: 2024,
   },
   {
     name: "Tasker",
     image: Product3,
     netlifyLink: "https://react-tdlist.netlify.app/",
     gitLink: "https://github.com/AndreyPervozvaniy/todolist",
+    img: item1,
+    year: 2023,
   },
 ];
 export const FormSchema = yup
@@ -251,6 +260,8 @@ export const MainPageDesc = {
   name: "ANDREY BELOKUDRYA",
   title: " Front-end Developer",
   desc: "For the past 9 months, I have been actively learning programming and contributing to various projects. I strive to bring a unique  perspective to each project.",
+  projectName: "REPOSITORY & DEPLOY",
+  projectTitle: "Personal projects",
 };
 export const KeyWordObj = {
   text: " View Projects",

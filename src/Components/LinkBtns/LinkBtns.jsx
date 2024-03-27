@@ -1,13 +1,24 @@
-import { Flex, Link, Icon, Button } from "@chakra-ui/react";
+import { Flex, Link, Icon, Text } from "@chakra-ui/react";
 import React from "react";
-
-const LinkBtns = ({ href, icon, ...props }) => {
+import { IoIosArrowRoundForward } from "react-icons/io";
+const LinkBtns = ({ netlify, git }) => {
   return (
-    <Flex {...props}>
-      <Link href={href} isExternal>
-        <Button backgroundColor={"#1f2328"}>
-          <Icon as={icon} w={10} h={4} color={"white"} />
-        </Button>
+    <Flex flexDir={"column"}>
+      <Link href={netlify} isExternal>
+        <Flex alignItems={"center"} _hover={{ textDecor: "underline" }}>
+          <Text color={"grey"} fontSize={"md"}>
+            Visit project
+          </Text>
+          <Icon as={IoIosArrowRoundForward} color={"grey"} />
+        </Flex>{" "}
+      </Link>{" "}
+      <Link href={git} isExternal>
+        <Flex alignItems={"center"} _hover={{ textDecor: "underline" }}>
+          <Text color={"grey"} fontSize={"md"}>
+            Visit repository
+          </Text>
+          <Icon as={IoIosArrowRoundForward} color={"grey"} />
+        </Flex>{" "}
       </Link>
     </Flex>
   );
