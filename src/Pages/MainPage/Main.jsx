@@ -10,6 +10,7 @@ import Elevator from "../../Components/ElevatorComp/Elevator";
 import FloatingBtnContant from "../../Components/FloatingBtnContact/FloatingBtn";
 import { ProductCollection } from "../../Components/ProductCollection/ProductCollection";
 import Footer from "../../Components/FooterComponent/Footer";
+import Banner from "../../Components/Banner/Banner";
 
 const Main = () => {
   return (
@@ -44,6 +45,7 @@ const Main = () => {
         />
       </Flex>
       <ProductCollection />
+      <Banner />
       <Footer />
     </Flex>
   );
