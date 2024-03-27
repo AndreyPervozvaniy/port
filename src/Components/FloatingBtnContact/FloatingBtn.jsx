@@ -15,7 +15,7 @@ const FloatingBtnContant = () => {
     <Box
       position="fixed"
       bottom="55"
-      left={{ base: "5px", xl: "10" }}
+      left={{ base: "25px", xl: "10px" }}
       zIndex="999"
     >
       <IconButton
@@ -43,7 +43,7 @@ const FloatingBtnContant = () => {
                   <IconButton
                     icon={<Icon as={item.icon} color={"black"} />}
                     borderRadius="full"
-                    backgroundColor={"#ccc"}
+                    backgroundColor={"white"}
                   />
                 </Link>
               </motion.div>

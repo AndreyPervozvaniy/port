@@ -14,7 +14,7 @@ import Banner from "../../Components/Banner/Banner";
 
 const Main = () => {
   return (
-    <Flex fontFamily={"Montserrat"} flexDir={"column"} h={"200vh"}>
+    <Flex fontFamily={"Montserrat"} flexDir={"column"}>
       <Header />
       <Elevator />
       <FloatingBtnContant />
@@ -32,7 +32,7 @@ const Main = () => {
           </Flex>
         </Flex>
         <Flex mr={10}>
-          <Image w={"450px"} src={face} />
+          <Image w={"400px"} src={face} />
         </Flex>
       </Flex>
       <Flex justify={"center"}>

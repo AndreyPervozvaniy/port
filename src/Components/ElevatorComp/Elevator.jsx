@@ -25,7 +25,7 @@ const Elevator = () => {
       <Button
         zIndex="12"
         position="fixed"
-        right={{ base: "5px", xl: "10" }}
+        right={{ base: "25px", xl: "10" }}
         bottom="55px"
         w={50}
         opacity="80%"

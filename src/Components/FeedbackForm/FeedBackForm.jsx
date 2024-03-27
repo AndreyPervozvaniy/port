@@ -43,15 +43,15 @@ const FeedBackForm = () => {
         <Flex flexDir={"column"}>
           <Input
             w="500px"
+            variant={"flushed"}
             mt={3}
             placeholder="Your name..."
             {...register("name")}
-            border={"1px solid black"}
           />
           <Text color={"red"}>{errors.name?.message}</Text>
           <Input
             mt={3}
-            border={"1px solid black"}
+            variant={"flushed"}
             placeholder="Your email..."
             {...register("email")}
           />
@@ -60,7 +60,7 @@ const FeedBackForm = () => {
             h={"100px"}
             placeholder={"Your feedback..."}
             mt={3}
-            border={"1px solid black"}
+            variant={"flushed"}
             {...register("feedback")}
           />
           <Text color={"red"}>{errors.feedback?.message}</Text>
